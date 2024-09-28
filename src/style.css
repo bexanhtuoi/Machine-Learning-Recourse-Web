@@ -1,19 +1,29 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat";
   margin: 0;
   padding: 0;
 }
+:root {
+  --bg-color: #dcfcff;
+  --second-bg-color: #ffffff;
+  --text-color: #c8dff9;
+  --main-color: rgba(0, 112, 197, 0.793);
+}
 body {
   position: relative;
+  background: var(--bg-color);
 }
 .inp {
-  border-radius: 12px;
-  width: 250px;
-  height: 25px;
+  border-radius: 20px;
+  width: 325px;
+  height: 35px;
+  background-color: rgb(241, 249, 255);
+  border-color: rgb(241, 249, 255);
 }
 .bar img {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 .bar {
   height: 30px;
@@ -23,7 +33,7 @@ body {
   justify-content: space-around;
   padding: 1.5rem;
   padding-left: 0%;
-  border-bottom-style: solid;
+  background-color: var(--second-bg-color);
 }
 .navbar {
   margin-left: 4rem;
@@ -31,11 +41,19 @@ body {
 .navbar a {
   height: 30px;
   width: 60px;
-  font-size: 1.2rem;
-  color: rgba(40, 205, 234, 0.867);
+  font-size: 1.3rem;
+  color: var(--main-color);
   text-decoration: none;
   padding: 1rem;
 }
 .bar a:hover {
   color: rgb(52, 69, 86);
+}
+.n {
+  width: 35vw;
+}
+.title {
+  font-family: "Lucida Console", "Fantasy", "monospace";
+  color: var(--main-color);
+  margin-right: 5rem;
 }
